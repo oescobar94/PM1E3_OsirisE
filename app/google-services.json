@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073189645741",
+    "project_id": "pm1e3-26b6f",
+    "storage_bucket": "pm1e3-26b6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073189645741:android:ddb1690078972f9bb8c524",
+        "android_client_info": {
+          "package_name": "com.example.pm1e3_osirise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDXNHlk1q_15vv_D8tK8RG2S7DdwY_T24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

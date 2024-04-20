@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83CED8"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtnTomarFotografia4"
+        android:layout_width="189dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Imagen capturada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCaputar4"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageView
+        android:id="@+id/imagenCaputar4"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="App Entrevistas"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtid"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="id orden"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtdescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnTomarFotografia4" />
+
+    <EditText
+        android:id="@+id/txtdescripcion"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+    <EditText
+        android:id="@+id/txtperiodista"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Periodista"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripcion" />
+
+    <EditText
+        android:id="@+id/txtfecha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="datetime|date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtperiodista" />
+
+    <Button
+        android:id="@+id/btningresar"
+        android:layout_width="133dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="588dp"
+        android:backgroundTint="#125D97"
+        android:text="Guardar"
+        app:layout_constraintEnd_toStartOf="@+id/btnlista"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnlista"
+        android:layout_width="135dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#125D97"
+        android:text="Listado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnescuchar"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#125D97"
+        android:text="Escuchar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toEndOf="@+id/btnDelUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnlista"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <Button
+        android:id="@+id/btnDelUp"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="#125D97"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btningresar"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btnStartRecording"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="524dp"
+        android:backgroundTint="#125D97"
+        android:drawableTint="#000000"
+        android:text="Grabar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStopRecording"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/btnStartRecording"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="524dp"
+        android:backgroundTint="#125D97"
+        android:text="Detener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/btnStartRecording"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
